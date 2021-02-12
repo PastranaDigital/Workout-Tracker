@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Barbell</fullName>
+                <default>false</default>
+                <label>Barbell</label>
+            </value>
+            <value>
+                <fullName>Cardio</fullName>
+                <default>false</default>
+                <label>Cardio</label>
+            </value>
+            <value>
+                <fullName>Dumbbell</fullName>
+                <default>false</default>
+                <label>Dumbbell</label>
+            </value>
+            <value>
+                <fullName>Foundational</fullName>
+                <default>false</default>
+                <label>Foundational</label>
+            </value>
+            <value>
+                <fullName>Gymnastic</fullName>
+                <default>false</default>
+                <label>Gymnastic</label>
+            </value>
+            <value>
+                <fullName>Other Object</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other Object</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

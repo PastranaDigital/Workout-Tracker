@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Score_as_Time__c</fullName>
+    <description>for Workouts when your Time is your score</description>
+    <externalId>false</externalId>
+    <inlineHelpText>ex: 15:35</inlineHelpText>
+    <label>Score as Time</label>
+    <length>10</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

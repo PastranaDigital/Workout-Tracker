@@ -1,0 +1,18 @@
+<aura:component implements="lightning:homeTemplate" 
+                description="A home page with One Giant Column." >
+    <aura:attribute name="column1" type="Aura.Component[]" />
+    
+    <div>
+        <lightning:layout horizontalAlign="spread" pullToBoundary="small">
+            <lightning:layoutItem size="12" flexibility="grow" 
+                                  padding="around-small">
+                {!v.column1}
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div> 
+</aura:component>
+<!--
+Draw the SVG then save it. 
+Open Chrome and go to file open and select the SVG. 
+Then inspect the element and edit the HTML. Copy and paste.
+-->

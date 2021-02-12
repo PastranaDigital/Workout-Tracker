@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Barbell</fullName>
+    <active>true</active>
+    <description>Barbell Movements must start with Barbell</description>
+    <errorConditionFormula>AND(  ISPICKVAL(Type__c, &apos;Barbell&apos;), 
+ NOT(BEGINS(Name, &apos;Barbell&apos;) ))</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Barbell Movements must start with Barbell</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WOD_Rowing_List</fullName>
+    <columns>Daily_Workout__c</columns>
+    <columns>Movements__c</columns>
+    <columns>Total_Reps__c</columns>
+    <columns>Weight_Lbs__c</columns>
+    <columns>Total_Weight__c</columns>
+    <columns>Previous_Value__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Movements__c</field>
+        <operation>startsWith</operation>
+        <value>Row</value>
+    </filters>
+    <label>Rowing List</label>
+</ListView>

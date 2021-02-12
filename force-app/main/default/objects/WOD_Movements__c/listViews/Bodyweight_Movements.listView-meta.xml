@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bodyweight_Movements</fullName>
+    <columns>NAME</columns>
+    <columns>Is_Strict__c</columns>
+    <columns>Is_Bodyweight__c</columns>
+    <columns>Type__c</columns>
+    <columns>Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Is_Bodyweight__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Bodyweight Movements</label>
+</ListView>
