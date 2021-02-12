@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dumbbell</fullName>
+    <active>true</active>
+    <description>Dumbbell Movements must start with DB or KB</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Type__c, &apos;Dumbbell&apos;), 
+  NOT(OR(BEGINS(Name, &apos;DB&apos;),
+         BEGINS(Name, &apos;KB&apos;)
+      )
+  )
+)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Dumbbell Movements must start with DB or KB</errorMessage>
+</ValidationRule>

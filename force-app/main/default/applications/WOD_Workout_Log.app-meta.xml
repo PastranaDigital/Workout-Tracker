@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Daily_Workout_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>WOD_Daily_Workout__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Daily_Workout_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>WOD_Daily_Workout__c</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#A42727</headerColor>
+        <logo>One_Gear_Logo_Exercise</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Will contain all objects for Daily Workouts</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>true</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>true</isNavPersonalizationDisabled>
+    <label>Workout Log</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>WOD_Daily_Workout__c</tabs>
+    <tabs>WOD_Movements__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>WOD_Workout_Movements__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Workout_Log_UtilityBar</utilityBar>
+</CustomApplication>
