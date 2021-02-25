@@ -1,0 +1,25 @@
+minimum_cumulusci_version: '3.29.0'
+project:
+    name: Workout-Tracker
+    package:
+        name: Workout-Tracker
+        api_version: '50.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/Workout-Tracker/tests
+            options:
+                outputdir: robot/Workout-Tracker/results
+
+    robot_testdoc:
+        options:
+            path: robot/Workout-Tracker/tests
+            output: robot/Workout-Tracker/doc/Workout-Tracker_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
