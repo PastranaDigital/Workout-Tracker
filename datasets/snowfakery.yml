@@ -1,0 +1,178 @@
+- object: WOD_Workout_Movements__c
+  fields:
+    Weight_Lbs__c:
+      random_number:
+        min: 20
+        max: 300
+        step: 5
+    Total_Weight__c:
+      random_number:
+        min: 100
+        max: 17000
+        step: 5
+    Total_Reps__c:
+      random_number:
+        min: 1
+        max: 500
+    Previous_Value__c:
+      random_number:
+        min: 100
+        max: 5000
+        step: 20
+    Movements__c:
+      - object: WOD_Movements__c
+        fields:
+          Name:
+            random_choice:
+              - "Chin-ups Strict"
+              - "DB Shoulder Raises - Double"
+              - "Burpee Box Jump Overs"
+              - "Barbell OH Lunges"
+              - "DB Snatches - Double"
+              - "Handstand Push-ups - Strict"
+              - "Barbell - Back Squats"
+              - "Wallball Twists"
+              - "DB OH Lunges - Double"
+              - "Barbell - Clean & Jerks"
+              - "Barbell - Power Snatches"
+              - "Barbell - Thrusters"
+              - "Barbell - Strict Presses"
+              - "Burpees over Bar Facing"
+              - "Toes to Bar - Kipping"
+              - "Barbell - Deadlifts"
+              - "Plank - Seconds"
+              - "DB Goblet Squats - Single"
+              - "DB OH Lunges - Single"
+              - "Bike - Calories"
+              - "DB Curls - Single"
+              - "DB Curls - Double"
+              - "DB Devil's Press"
+              - "DB Thrusters - Single"
+              - "DB Thrusters - Double"
+              - "DB Deadlifts - Double"
+              - "DB Front Squats - Double"
+              - "Barbell - Hang Cleans"
+              - "Barbell - Push Presses"
+              - "Barbell - Power Cleans"
+              - "Barbell - Hang Clean & Jerks"
+              - "Barbell - Squat Cleans"
+              - "Barbell - Hang Snatches"
+              - "Barbell - Front Squats"
+              - "Barbell - Push Jerks"
+              - "Burpees over Bar Lateral"
+              - "DB Snatches - Single"
+              - "DB Hang Clean & Jerks - Single"
+              - "DB Hang Clean & Jerks - Double"
+              - "DB Hang Clean + Strict Press - Single"
+              - "Chest to Bar - Kipping"
+              - "Chest to Bar - Strict"
+              - "Row - Calories"
+              - "Row - Meters"
+              - "Burpees to Target"
+              - "Sit-ups"
+              - "Pull-ups - Kipping"
+              - "Pull-ups - Strict"
+              - "Burpees to Plate"
+              - "DB Renegade Row - Double"
+              - "DB Shrugs - Double"
+              - "DB Rows - Double"
+              - "Barbell - Bench Press"
+              - "Push-ups"
+              - "Barbell - GTOH"
+              - "Sandbag COS"
+              - "DB - SDHP"
+              - "Farmer Carry - Steps"
+              - "DB Curl + Press - Single"
+              - "Barbell - Split Jerks"
+              - "DB Curl + Press - Double"
+              - "KB Swings"
+              - "Ring Muscle-ups - Kipping"
+              - "Ring Muscle-ups - Strict"
+              - "Wallball Shots"
+              - "Knees to Elbows"
+              - "DB Bench Press - Incline"
+              - "DB Hang Squat Cleans - Double"
+              - "Matador Dips - Kipping"
+              - "DB Lunges - Double FR"
+              - "Bar Muscle-ups - Kipping"
+              - "Bar Muscle-ups - Strict"
+              - "Ring Dips - Kipping"
+              - "Ring Rows"
+              - "DB Box Step Ups - Double"
+              - "DB Side Bends - Single"
+              - "Ring Dips - Strict"
+              - "Matador Dips - Strict"
+              - "Running - Meters"
+              - "Handstand Push-ups - Kipping"
+              - "Lunges - Drop Step"
+              - "Lunges - Jumping"
+              - "Air Squats"
+              - "DB Lunges - 1 OH + 1 FR"
+              - "Bench Dragon Flags"
+              - "Double Unders"
+              - "KB Goblet Squats"
+              - "Box Jumps"
+              - "Box Jump Overs"
+              - "Pistols"
+              - "Barbell - Bench Press - Incline"
+              - "DB Bench Press"
+              - "Parallette Holds - L Sit"
+              - "TRX Knee Tucks"
+              - "DB Box Step Ups - Single FR"
+              - "DB Box Step Ups - Double FR"
+              - "DB Strict Press - Single"
+              - "DB Strict Press - Double"
+              - "DB Clusters - Double"
+              - "DB Push Press - Double"
+              - "Plate GTOH"
+              - "Weighted Sit-ups"
+              - "Plate Lunges - Front Rack"
+              - "Plate Lunges - OH"
+              - "DB Lunges - Double"
+              - "Parallette Holds - Knee Tuck"
+              - "Rope Climbs - Legless"
+              - "Box Step Ups"
+              - "TRX Push-ups"
+              - "DB Hang Snatch - Single"
+              - "Barbell Curls"
+              - "Barbell - Hang Squat Clean"
+          Is_Bodyweight__c:
+            random_choice:
+              - "True"
+              - "False"
+          Is_Strict__c:
+            random_choice:
+              - "True"
+              - "False"
+          Push_or_Pull__c:
+            random_choice:
+              - "Push"
+              - "Pull"
+          Weight_Multiplier__c:
+            random_choice:
+              - "1"
+              - "2"
+    Daily_Workout__c:
+      - object: WOD_Daily_Workout__c
+        fields:
+          Date_Performed__c:
+            fake: date
+          RecordType: "AMRAP"
+            # random_choice:
+            #   - "AMRAP"
+            #   - "Death By"
+            #   - "EMOTM"
+            #   - "For Time"
+            #   - "Strength"
+          Score_as_Total_Reps__c:
+            random_number:
+              min: 1
+              max: 700
+          # Score_as_Time__c:
+          #   fake: time
+          #     - "pattern: '%H:%M:%S'"
+          # Time_Duration__c:
+          #   fake: time
+          #     - "pattern: '%H:%M:%S'"
+          Workout_Description__c:
+            fake: paragraph
