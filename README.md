@@ -1,21 +1,15 @@
-# Salesforce DX Project: Next Steps
+# Workout-Tracker
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Add a brief description of this project here, in Markdown format.
+It will be shown on the main page of the project's GitHub repository.
+## Development
 
-## How Do You Plan to Deploy Your Changes?
+To work on this project in a scratch org:
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
-
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
-
+1. [Set up CumulusCI](https://cumulusci.readthedocs.io/en/latest/tutorial.html)
+2. Run `cci flow run dev_org --org dev` to deploy this project.
+3. Run `cci org browser dev` to open the org in your browser.
+4. In org navigate to Setup -> Users
+6. Assign the "Daily Workouts Admin" to your user
 ## Data
 - [Workout-Tracker-Data](https://docs.google.com/spreadsheets/d/1ePuqrHugGRvyZ53cMI_m-ZuA7uBJ6v3TXIN0TCjUpMw/edit?usp=sharing) WOD_Movements__c will be helpful for getting started. The others are to help you understand the connection between the 3 objects
